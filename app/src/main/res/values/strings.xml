@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">GrevienceApp</string>
+    <string name="todo">TODO</string>
+    <array name="leaveType">
+        <item>Casual Leave</item>
+        <item>LAP</item>
+        <item>LHAP</item>
+        <item>Special Casual Leave</item>
+        <item>Maternity Leave</item>
+        <item>Child Care Leave</item>
+        <item>Paternity Leave</item>
+        <item>Leave Not Due</item>
+        <item>Leave Without Pay</item>
+        <item>Ex-India Leave</item>
+    </array>
+    <array name="GrievanceType">
+        <item>Professional</item>
+        <item>Personal</item>
+    </array>
+    <array name="GrievancePriority">
+        <item>Out Today</item>
+        <item>Most Immediate</item>
+        <item>Immediate</item>
+    </array>
+    <array name="GrievanceTo">
+        <item>TI/HQ</item>
+        <item>TI</item>
+        <item>Sr. DOM</item>
+    </array>
+    <array name="level3">
+        <item>PLANING WORK</item>
+        <item>ENGINEERING WORK</item>
+        <item>GOODS SLIDING</item>
+        <item>STORE REQUIREMENT</item>
+        <item>STABLED RAKE</item>
+        <item>LINE BLOCK</item>
+        <item>POWER BLOCK</item>
+        <item>PUNCTUALITY</item>
+        <item>DETENTION DETAIL</item>
+        <item>OTHERS</item>
+    </array>
+    <array name="accidentClassification">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+    </array>
+    <array name="failureClassification">
+        <item>Signal Failure</item>
+        <item>Point Failure</item>
+        <item>Track Circuit Failure</item>
+        <item>Block Instrument Failure</item>
+        <item>BPAC Failure</item>
+        <item>LC Gate Failure</item>
+        <item>Communication Failure</item>
+        <item>Panel Failure</item>
+        <item>Other</item>
+    </array>
+    <array name="empType">
+        <item>SS/SM</item>
+        <item>SHM/P.MAN</item>
+    </array>
+    <array name="stationInspectionType">
+        <item>Quarterly</item>
+        <item>Monthly</item>
+        <item>Day</item>
+        <item>Night</item>
+        <item>Yard inspection</item>
+    </array>
+    <array name="otherInspectionType">
+        <item>LC Gates</item>
+        <item>Running Room</item>
+        <item>Foot Plate</item>
+        <item>Brake Van</item>
+    </array>
+    <array name="recommending">
+        <item>Staff</item>
+        <item>Station</item>
+    </array>
+</resources>

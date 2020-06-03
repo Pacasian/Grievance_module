@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".G_Admin_LevelAuth"
+    android:orientation="vertical">
+<!--
+This page must be removed during the integration of the project
+
+-->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="Select the Admin Level User"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/idLevel"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/GrievanceTo" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/btnAdminLevel"
+        android:text="Okay"
+        android:layout_margin="50dp"/>
+</LinearLayout>
