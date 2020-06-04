@@ -7,7 +7,7 @@ package com.example.grevienceapp;
 public class UserDataRespository {
 
 
-        public String id; //pf number
+        public static String id; //pf number
         public String DBid;
         public UserDataRespository(String id)
         {
