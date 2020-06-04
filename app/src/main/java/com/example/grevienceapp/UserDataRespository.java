@@ -1,5 +1,9 @@
 package com.example.grevienceapp;
 
+/**
+ * PROVIDES INFORMATION LIKE ----PF NUMBER----EMPLOYEE DB ID----EMPLOYEE LEVEL ---EMPLOYEE STATION
+ *
+ */
 public class UserDataRespository {
 
 
@@ -12,7 +16,7 @@ public class UserDataRespository {
 
         }
 
-        public String getID() {
+        public static String getID() {
             return id;
         }
 

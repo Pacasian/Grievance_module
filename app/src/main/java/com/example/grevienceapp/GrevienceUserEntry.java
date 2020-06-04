@@ -158,11 +158,15 @@ else{
                 String Matter= eidMatter.getText().toString();
                 //java.sql.Date sqlDate = new java.sql.Date(currentDateandTime);
                 //@SuppressLint("WrongThread") String sendMore = edAdd.getText().toString();
-                System.out.println(currentDateandTime);
+                /**
+
+                 *    System.out.println(currentDateandTime);
                 System.out.println(stMatter);
                 System.out.println(stPriority);
                 System.out.println(stType);
                 System.out.println(stSendTo);
+                 *
+                 */
                 String query = "insert into GTable (type,priority,timeDate,matter,sendTo) values ('" + stType + "','" + stPriority + "','" + currentDateandTime + "','" + Matter + "','" + stSendTo + "')";
 
                 Statement stmt = con.createStatement();
