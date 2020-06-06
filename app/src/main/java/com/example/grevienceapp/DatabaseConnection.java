@@ -15,7 +15,7 @@ class DatabaseConnection {
     @SuppressLint("NewApi")
     static Connection ConnectDB()
     {
-        String ip = "192.168.1.4";
+        String ip = "192.168.1.5";
         String port = "1433";
         String Classes = "net.sourceforge.jtds.jdbc.Driver";
         String database = "testDatabase";

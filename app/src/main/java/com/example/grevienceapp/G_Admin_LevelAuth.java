@@ -4,6 +4,7 @@ package com.example.grevienceapp;
  * This page will be replaced with automatic user level auth
  * IMPORTANT
  * ONLY FOR DEVELOPMENT
+ *  String query = "insert into empTable ( pfNumber,name,profilePic,sex,dob,bloodGroup,contactInfo,eContactInfo,state,qual,designation,currStationCode,stationSixMonths,sectionTI,DateofApp,DoJoinStation,lastPME,lastRCDate,awards,tiCount,currStationName,empLevel) values ("+ stPfNumber + ",'" + Name + "','" + IDrive + "','" + Sex + "','" + DOB + "','"+ BG +"', '"+ Contact +"', '"+ EContact + "','"+ State +"' ,'"+Qual+"' ,'"+Desg +"' ,'"+ sCode+"','"+WorkX+"' ,'"+ Section +"','"+DOApp+"' ,'"+DJS+"' ,'"+PME+"','"+RC+"' ,'"+ Award+"' ,"+sTiCount+" ,'"+ Station+"',"+empLevel+") ;";
  */
 
 import androidx.appcompat.app.AppCompatActivity;

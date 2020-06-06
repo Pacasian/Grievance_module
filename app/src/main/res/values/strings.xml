@@ -89,4 +89,76 @@
         <item>Staff</item>
         <item>Station</item>
     </array>
+    <array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </array>
+    <array name="state">
+    <item> Tamil Nadu</item>
+    <item>Andhra Pradesh</item>
+    <item> Arunachal Pradesh</item>
+    <item> Assam</item>
+    <item> Bihar</item>
+    <item> Chhattisgarh</item>
+    <item> Goa</item>
+    <item>Gujarat</item>
+    <item>Haryana</item>
+    <item>Himachal Pradesh</item>
+    <item>Jharkhand</item>
+    <item> Karnataka</item>
+    <item>Kerala</item>
+    <item> Madhya Pradesh</item>
+    <item>Maharashtra</item>
+    <item>Manipur</item>
+    <item> Meghalaya</item>
+    <item>Mizoram</item>
+    <item>Nagaland</item>
+    <item>Odisha</item>
+    <item>Punjab</item>
+    <item>Rajasthan</item>
+    <item>Sikkim</item>
+    <item>Telangana</item>
+    <item>Tripura</item>
+    <item>Uttarakhand</item>
+    <item>Uttar Pradesh</item>
+    <item>West Bengal</item>
+    <item>Andaman and Nicobar Islands</item>
+    <item>Chandigarh</item>
+    <item> Daman and  Diu</item>
+    <item>Delhi</item>
+    <item> Jammu and Kashmir</item>
+    <item>Ladakh</item>
+    <item> Lakshadweep</item>
+        <item>Puducherry</item>
+
+    </array>
+<array name="tiName">
+    <item>Select the Section TI</item>
+    <item>TI/MAP</item>
+    <item>TI/I/SA</item>
+    <item>TI/ED</item>
+    <item>TI/TUP</item>
+    <item>TI/CBE</item>
+    <item>SS/ONR</item>
+    <item>SS/UAM</item>
+    <item>TI/ED</item>
+    <item>TI/KRR</item>
+    <item>TI/KLT</item>
+    <item>TI/ATU</item>
+    <item>TI/II/SA</item>
+    <item>TI/KRR</item>
+    <item>TI/II/SA"</item>
+
+</array>
+    <array name="designation">
+        <item>Select Your Designation</item>
+        <item>Station master</item>
+        <item>Points man</item>
+        <item>Section TI</item>
+        <item>Guard</item>
+        <item>sr.DOM</item>
+        <item>Admin</item>
+    </array>
 </resources>
