@@ -55,6 +55,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioName"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -74,6 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioDrive"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -93,6 +95,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/idSex"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -112,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioDOB"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -131,6 +135,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioBG"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -150,6 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioContact"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -169,6 +175,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioeContact"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -188,6 +195,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/idState"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -207,6 +215,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioQual"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <!--PROFESSIONAL DETAILS-->
@@ -236,6 +245,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/pfNumber"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -255,6 +265,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/idDesg"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -274,6 +285,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioStation"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -293,6 +305,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioWorkExp"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -312,6 +325,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/idSection"
                         android:textSize="16sp"/>
                 </LinearLayout>
                 <LinearLayout
@@ -331,8 +345,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioDOApp"
                         android:textSize="16sp"/>
                 </LinearLayout>
+                <!---
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -390,6 +406,7 @@
                         android:hint="Entry"
                         android:textSize="16sp"/>
                 </LinearLayout>
+                -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -407,6 +424,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Entry"
+                        android:id="@+id/bioAward"
                         android:textSize="16sp"/>
                 </LinearLayout>
 
@@ -425,6 +443,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="REJECT"
+                    android:id="@+id/btnReject"
                     android:textSize="17sp"
                     android:layout_gravity="center"
                     android:background="@drawable/red_border_only"/>
@@ -436,6 +455,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:text="APPROVE"
+                    android:id="@+id/btnOK"
                     android:textSize="17sp"
                     android:layout_gravity="center"
                     android:background="@drawable/border_only_brn"/>
