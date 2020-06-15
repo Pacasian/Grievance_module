@@ -1,14 +1,11 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.BioData;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -23,12 +20,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.grevienceapp.ConnectionClass;
+import com.example.grevienceapp.R;
+import com.example.grevienceapp.RailwaySharedPreference;
+import com.example.grevienceapp.UserDataRespository;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class bioData extends AppCompatActivity {
     UserDataRespository udr;
@@ -71,7 +70,7 @@ public class bioData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O_MR1) {
-            getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.NavGrey));
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.NavGrey));
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Transparent));

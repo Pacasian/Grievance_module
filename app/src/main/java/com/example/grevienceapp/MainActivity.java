@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.grevienceapp.Greviance.G_Admin_LevelAuth;
+import com.example.grevienceapp.Greviance.GrevienceUserEntry;
+
 public class MainActivity extends AppCompatActivity {
 Button btnSampleAdmin;
 Button btnSampleEmpl;
@@ -26,7 +29,7 @@ Button btnSampleEmpl;
         btnSampleEmpl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,GrevienceUserEntry.class));
+                startActivity(new Intent(MainActivity.this, GrevienceUserEntry.class));
                 finish();
             }
         });

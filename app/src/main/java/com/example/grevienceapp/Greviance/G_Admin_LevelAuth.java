@@ -1,4 +1,4 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.Greviance;
 /**
  * This page must be removed during the integration of the project
  * This page will be replaced with automatic user level auth
@@ -14,6 +14,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import com.example.grevienceapp.R;
 
 public class G_Admin_LevelAuth extends AppCompatActivity {
     Button btnLevel;

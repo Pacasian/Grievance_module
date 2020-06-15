@@ -8,14 +8,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-class DatabaseConnection {
+public class DatabaseConnection {
 
     //ESTABLISHES CONNECTION WITH MS SQL DATABASE
     //can be called from any class
     @SuppressLint("NewApi")
-    static Connection ConnectDB()
+    public static Connection ConnectDB()
     {
-        String ip = "192.168.1.5";
+        String ip = "27.4.126.171";
         String port = "1433";
         String Classes = "net.sourceforge.jtds.jdbc.Driver";
         String database = "testDatabase";

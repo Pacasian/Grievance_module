@@ -11,25 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".G_Admin_LevelAuth"></activity>
-        <activity android:name=".GrevienceListView" />
-        <activity android:name=".GrevienceAdmin" />
-        <activity android:name=".GrevienceUserEntry" />
-        <activity android:name=".bioData" >
+        <activity android:name=".Greviance.G_Admin_LevelAuth"></activity>
+        <activity android:name=".Greviance.GrevienceListView" />
+        <activity android:name=".Greviance.GrevienceAdmin" />
+        <activity android:name=".Greviance.GrevienceUserEntry" />
+        <activity android:name=".BioData.bioData" >
 
         </activity>
-        <activity android:name=".bioDataAdmin" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".BioData.bioDataAdmin" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
 
 
         </activity>
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

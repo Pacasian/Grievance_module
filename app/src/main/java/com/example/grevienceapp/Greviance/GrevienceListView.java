@@ -1,4 +1,4 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.Greviance;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.grevienceapp.ConnectionClass;
+import com.example.grevienceapp.R;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

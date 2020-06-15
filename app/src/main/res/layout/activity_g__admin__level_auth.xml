@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".G_Admin_LevelAuth"
+    tools:context=".Greviance.G_Admin_LevelAuth"
     android:orientation="vertical">
 <!--
 This page must be removed during the integration of the project

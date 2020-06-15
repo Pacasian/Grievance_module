@@ -1,4 +1,4 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.BioData;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.example.grevienceapp.R;
+import com.example.grevienceapp.RailwaySharedPreference;
+
 public class bioDataAdmin extends AppCompatActivity {
     TextView actionTittle;
     ImageView actionIcon;
@@ -22,7 +25,7 @@ public class bioDataAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && Build.VERSION.SDK_INT < Build.VERSION_CODES.O_MR1) {
-            getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.NavGrey) );
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.NavGrey) );
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Transparent) );

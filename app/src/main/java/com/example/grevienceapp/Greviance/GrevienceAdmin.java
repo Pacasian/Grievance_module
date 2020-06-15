@@ -1,10 +1,9 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.Greviance;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +13,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.grevienceapp.DatabaseConnection;
+import com.example.grevienceapp.R;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

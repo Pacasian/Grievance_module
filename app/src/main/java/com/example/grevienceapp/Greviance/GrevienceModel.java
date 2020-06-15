@@ -1,4 +1,4 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.Greviance;
 
 /**
  * sample model structure of list view for grevience

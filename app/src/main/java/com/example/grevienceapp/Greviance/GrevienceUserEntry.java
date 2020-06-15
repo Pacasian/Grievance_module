@@ -1,4 +1,4 @@
-package com.example.grevienceapp;
+package com.example.grevienceapp.Greviance;
 /**
  * The Java file for User Employee Grevience:   Client Level
  * Part 2 of Grevience
@@ -8,21 +8,12 @@ package com.example.grevienceapp;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,6 +21,9 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.grevienceapp.DatabaseConnection;
+import com.example.grevienceapp.R;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -50,7 +44,7 @@ public class GrevienceUserEntry extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && Build.VERSION.SDK_INT < Build.VERSION_CODES.O_MR1) {
-            getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.NavGrey) );
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.NavGrey) );
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.colorPrimary) );
