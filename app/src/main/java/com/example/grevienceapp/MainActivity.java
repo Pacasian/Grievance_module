@@ -9,10 +9,13 @@ import android.widget.Button;
 
 import com.example.grevienceapp.Greviance.G_Admin_LevelAuth;
 import com.example.grevienceapp.Greviance.GrevienceUserEntry;
+import com.example.grevienceapp.Quiz.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 Button btnSampleAdmin;
 Button btnSampleEmpl;
+Button btnQuiz;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,13 @@ Button btnSampleEmpl;
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GrevienceUserEntry.class));
                 finish();
+            }
+        });
+        btnQuiz=findViewById(R.id.btnQuiz);
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, QuizActivity.class));
             }
         });
     }

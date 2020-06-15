@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.grevienceapp">
 
-        <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,19 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Greviance.G_Admin_LevelAuth"></activity>
+        <activity android:name=".Quiz.ResultQuiz"></activity>
+        <activity android:name=".Greviance.G_Admin_LevelAuth" />
         <activity android:name=".Greviance.GrevienceListView" />
         <activity android:name=".Greviance.GrevienceAdmin" />
         <activity android:name=".Greviance.GrevienceUserEntry" />
-        <activity android:name=".BioData.bioData" >
-
-        </activity>
-        <activity android:name=".BioData.bioDataAdmin" >
-
-
-
-
-        </activity>
+        <activity android:name=".BioData.bioData"></activity>
+        <activity android:name=".BioData.bioDataAdmin"></activity>
+        <activity android:name=".Quiz.QuizActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
