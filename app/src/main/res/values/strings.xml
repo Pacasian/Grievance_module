@@ -161,4 +161,13 @@
         <item>sr.DOM</item>
         <item>Admin</item>
     </array>
+    <array name="typeOfLeave">
+
+        <item>Select Your Leave Type :</item>
+        <item>Casual Leave</item>
+        <item>Sick Leave</item>
+        <item>Other Leave</item>
+
+
+    </array>
 </resources>

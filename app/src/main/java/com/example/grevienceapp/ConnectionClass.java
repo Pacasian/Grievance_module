@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionClass {
-    String ip = "115.97.62.172";
+    String ip = "192.168.1.4";
     String Classes = "net.sourceforge.jtds.jdbc.Driver";
     String db = "testDatabase";
     String un = "test";

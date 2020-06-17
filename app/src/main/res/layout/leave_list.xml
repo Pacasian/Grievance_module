@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ac"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_rectangle"
+
+        android:layout_marginBottom="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pfNumber"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:id="@+id/txt_pf_View"/>
+
+        <TextView
+
+            android:text="No. of days"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDays"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:maxLength="30"
+            android:textColor="@color/Red"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/txt_leave_type"
+            android:text="leave type"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:id="@+id/txt_status"/>
+
+            <TextView
+
+                android:text="From"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_from"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:maxLength="30"
+
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/txt_to"
+                android:text="To"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
