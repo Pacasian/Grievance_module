@@ -1,6 +1,7 @@
 package com.example.grevienceapp;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.StrictMode;
 import android.util.Log;
 
@@ -8,14 +9,21 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DatabaseConnection {
-
+public class DatabaseConnection extends Activity {
+    private RailwaySharedPreference sharedInfo;
     //ESTABLISHES CONNECTION WITH MS SQL DATABASE
     //can be called from any class
+    // removed static
+
     @SuppressLint("NewApi")
-    public static Connection ConnectDB()
+    public  Connection ConnectDB()
     {
-        String ip = "192.168.1.4";
+        String ip ;
+        sharedInfo=RailwaySharedPreference.getInstance(this);
+        ip = sharedInfo.get("ip");
+        System.out.println("------------------------");
+        System.out.println(ip+"in DatabaseClass");
+        System.out.println("------------------------");
         String port = "1433";
         String Classes = "net.sourceforge.jtds.jdbc.Driver";
         String database = "testDatabase";

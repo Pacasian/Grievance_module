@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.grevienceapp.DatabaseConnection;
+import com.example.grevienceapp.LeaveModule.IndividualLeavePreview;
 import com.example.grevienceapp.R;
 
 import java.sql.Connection;
@@ -48,9 +49,12 @@ public class GrevienceAdmin extends AppCompatActivity {
         txtType = findViewById(R.id.idAdminType);
         txtMatterExplain = findViewById(R.id.idMatterExplain);
         //btnApprove=findViewById(R.id.btnApprove);
-        con = DatabaseConnection.ConnectDB();
+        con = new DatabaseConnection().ConnectDB();
         if (con != null) {
-
+            Toast.makeText(GrevienceAdmin.this, "Connection valid", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(GrevienceAdmin.this, "Connection invalid", Toast.LENGTH_SHORT).show();
         }
         // Setting up the function when button login is clicked
         CheckLogin checkLogin = new CheckLogin();// ShowAdmin.this is the Asynctask, which is used to process in background to reduce load on app process
@@ -101,7 +105,7 @@ public class GrevienceAdmin extends AppCompatActivity {
             //@SuppressLint("WrongThread") String passwordd = passwordTv.getText().toString();
 
             try {
-                con = DatabaseConnection.ConnectDB(); // Connect to database
+                 // Connect to database
                 if (con == null) {
                     z = "Check Your Internet Access!";
                 } else {

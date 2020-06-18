@@ -20,6 +20,7 @@ public class RailwaySharedPreference { //Did you remember to vote up my example?
             return store;
         }
 
+
         public void put(String key, String value) {//Log.v("RailwaySharedPreference","PUT "+key+" "+value);
             Editor editor = SP.edit();
             editor.putString(key, value);
