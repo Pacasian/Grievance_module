@@ -13,7 +13,7 @@ public class ConnectionClass extends Activity {
     private RailwaySharedPreference sharedInfo;
 
 
-    String ip;
+    String ip="192.168.1.4";
     //String ip = "192.168.1.4";
     String Classes = "net.sourceforge.jtds.jdbc.Driver";
     String db = "testDatabase";
@@ -21,9 +21,13 @@ public class ConnectionClass extends Activity {
     String password = "test";
     @SuppressLint("NewApi")
     public Connection CONN() {
+        try {
+            sharedInfo = RailwaySharedPreference.getInstance(this);
+            ip = sharedInfo.get("ip");
+        }catch (NullPointerException e){
+            System.out.println("Ex---------------------------------");
+        }
 
-        sharedInfo=RailwaySharedPreference.getInstance(this);
-        ip = sharedInfo.get("ip");
         System.out.println("------------------------");
         System.out.println(ip);
         System.out.println("------------------------");

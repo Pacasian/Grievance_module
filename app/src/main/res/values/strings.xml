@@ -167,7 +167,11 @@
         <item>Casual Leave</item>
         <item>Sick Leave</item>
         <item>Other Leave</item>
+    </array>
+    <array name="shift">
 
-
+        <item>Shift :</item>
+        <item>Day</item>
+        <item>Night</item>
     </array>
 </resources>

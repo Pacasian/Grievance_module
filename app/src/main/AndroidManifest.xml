@@ -11,21 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Rooster.ViewRoosterActivity"></activity>
+        <activity android:name=".Rooster.AddRoosterActivity1" />
+        <activity android:name=".Rooster.AddRoosterActivity" />
         <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name=".tempActivity">
-
-        </activity>
+        <activity android:name=".tempActivity" />
         <activity android:name=".LeaveModule.IndividualLeavePreview" />
         <activity android:name=".LeaveModule.LeaveHistory" />
         <activity android:name=".LeaveModule.LeaveViewerAdmin" />
@@ -38,7 +35,14 @@
         <activity android:name=".BioData.bioData" />
         <activity android:name=".BioData.bioDataAdmin" />
         <activity android:name=".Quiz.QuizActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
