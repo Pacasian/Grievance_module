@@ -3,7 +3,6 @@ package com.example.grevienceapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -20,7 +19,6 @@ import com.example.grevienceapp.LeaveModule.LeaveApplication;
 import com.example.grevienceapp.LeaveModule.LeaveViewerAdmin;
 import com.example.grevienceapp.Quiz.QuizActivity;
 import com.example.grevienceapp.Rooster.AddRoosterActivity;
-import com.example.grevienceapp.Rooster.AddRoosterActivity1;
 import com.example.grevienceapp.Rooster.ViewRoosterActivity;
 
 import java.sql.Connection;

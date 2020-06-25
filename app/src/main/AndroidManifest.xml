@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Rooster.ViewRoosterActivity"></activity>
-        <activity android:name=".Rooster.AddRoosterActivity1" />
         <activity android:name=".Rooster.AddRoosterActivity" />
         <activity android:name=".SplashScreen">
 

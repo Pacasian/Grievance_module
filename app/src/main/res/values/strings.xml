@@ -173,5 +173,7 @@
         <item>Shift :</item>
         <item>Day</item>
         <item>Night</item>
+        <item>Night Off</item>
+        <item>Rest</item>
     </array>
 </resources>

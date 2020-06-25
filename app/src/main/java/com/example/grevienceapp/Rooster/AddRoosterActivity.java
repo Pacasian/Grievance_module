@@ -41,7 +41,7 @@ public class AddRoosterActivity extends AppCompatActivity {
     private ConnectionClass connectionClass; //
     Connection con;
     String d1,d2,d3,d4,d5,d6,d7;
-    String[] shift=new String[]{"Day","Night"};
+    String[] shift=new String[]{"Day","Night","Night Off","Rest"};
     String firstShiftValue;
     int currPf=0;
     @Override
@@ -95,33 +95,56 @@ public class AddRoosterActivity extends AppCompatActivity {
                     btn_insert.setEnabled(true);
                     firstShiftValue = st;
                    // Toast.makeText(AddRoosterActivity.this, st, Toast.LENGTH_SHORT).show();
-                    if (shift[0].equals(st)) {
-                        Toast.makeText(AddRoosterActivity.this, "wrong", Toast.LENGTH_SHORT).show();
-                        for(int i=0;i<7;i++){
-                            if(i%2!=0){
-                                listOfTV[i].setText(shift[1]);
-                            }else{
-
-                                listOfTV[i].setText(shift[0]);
-                            }
-                        }
-                    } else {
-                        String temp = shift[0];
-                        shift[0] = shift[1];
-                        shift[1] = temp;
-                        for(int i=0;i<7;i++){
-                            if(i%2!=0){
-                                listOfTV[i].setText(shift[1]);
-                            }else{
-
-                                listOfTV[i].setText(shift[0]);
-                            }
-                        }
-                    }
+                    setRoosterDays(st);
 
                 }
             }
         });
+        /**
+         if (shift[0].equals(st)) {
+         Toast.makeText(AddRoosterActivity.this, "wrong", Toast.LENGTH_SHORT).show();
+         for(int i=0;i<7;i++){
+         if(i%2!=0){
+         listOfTV[i].setText(shift[1]);
+         }else{
+
+         listOfTV[i].setText(shift[0]);
+         }
+         }
+         } else {
+         String temp = shift[0];
+         shift[0] = shift[1];
+         shift[1] = temp;
+         for(int i=0;i<7;i++){
+         if(i%2!=0){
+         listOfTV[i].setText(shift[1]);
+         }else{
+
+         listOfTV[i].setText(shift[0]);
+         }
+         }
+         }
+         ---------------------------------------------------------------
+         if (shift[0].equals(firstShiftValue)) {
+         String temp = shift[0];
+         shift[0] = shift[1];
+         shift[1] = temp;
+         }
+
+         ----------------------------------------------------------------
+         for (int i = 0; i < 7; i++) {
+         if (i % 2 != 0) {
+         listOfTV[i].setText(shift[1]);
+         } else {
+
+         listOfTV[i].setText(shift[0]);
+         }
+         }
+
+
+
+
+         */
         /**
          * btn_insert helps in extracting the data from the EditText and update it to the database
          */
@@ -158,21 +181,23 @@ public class AddRoosterActivity extends AppCompatActivity {
                     txtPf2.setText("PfNumber :" + eachPfNumber.get(currPf).id);
                     txtNameShow.setText("Name :" + eachPfNumber.get(currPf).name);
                     txtCountShow.setText("No. of Data added " + currPf + "");
-                    if (shift[0].equals(firstShiftValue)) {
-                        String temp = shift[0];
-                        shift[0] = shift[1];
-                        shift[1] = temp;
-                    }
-                    // Now storing the first shift array value to the firstShiftValue variable
-                    firstShiftValue = shift[0];
-                    for (int i = 0; i < 7; i++) {
-                        if (i % 2 != 0) {
-                            listOfTV[i].setText(shift[1]);
-                        } else {
 
-                            listOfTV[i].setText(shift[0]);
+                    String temp_firstName=null;
+                    for (int i=0;i<shift.length;i++){
+                        if (firstShiftValue.equals(shift[i])) {
+                            Toast.makeText(AddRoosterActivity.this, "its happening", Toast.LENGTH_SHORT).show();
+                            if (i == 3) {
+                                setRoosterDays(shift[0]);
+                                temp_firstName=shift[0];
+                            } else {
+                                setRoosterDays(shift[i + 1]);
+                                temp_firstName=shift[i+1];
+                            }
                         }
                     }
+                    // Now storing the first shift array value to the firstShiftValue variable
+                    firstShiftValue = temp_firstName;
+
                 }else{
                     btn_next_show.setEnabled(false);
                     btn_insert.setEnabled(false);
@@ -303,8 +328,8 @@ public class AddRoosterActivity extends AppCompatActivity {
                 System.out.println("1 "+d1+" 2 "+d2+" 3 "+d3+" 4 "+d4+" 5 "+d5+" 6 "+d6+" 7 "+d7);
 
                 System.out.println("*********************");
-
-                String query = "insert into "+SendClass+"_R_Table (pfNumber,Day1,Day2,Day3,Day4,Day5,Day6,Day7) values ('" + eachPfNumber.get(currPf).id + "','" + d1 + "','" + d2 + "','" + d3 + "','" + d4 + "','" + d5 + "','" + d6 + "','" + d7 + "') ;";
+                String query="";
+                //String query = "insert into "+SendClass+"_R_Table (pfNumber,Day1,Day2,Day3,Day4,Day5,Day6,Day7) values ('" + eachPfNumber.get(currPf).id + "','" + d1 + "','" + d2 + "','" + d3 + "','" + d4 + "','" + d5 + "','" + d6 + "','" + d7 + "') ;";
 
                 Statement stmt = con.createStatement();
 
@@ -316,6 +341,48 @@ public class AddRoosterActivity extends AppCompatActivity {
                 Log.e("ERROR", se.getMessage());
             }
             return "Done";
+        }
+    }
+    public void setRoosterDays(String st){
+        if (st.equals("Day")){
+            listOfTV[0].setText("Day");
+            listOfTV[1].setText("Night");
+            listOfTV[2].setText("Night Off");
+            listOfTV[3].setText("Rest");
+            listOfTV[4].setText("Day");
+            listOfTV[5].setText("Night");
+            listOfTV[6].setText("Night Off");
+
+
+        }
+        else if (st.equals("Night")){
+
+            listOfTV[0].setText("Night");
+            listOfTV[1].setText("Night Off");
+            listOfTV[2].setText("Rest");
+            listOfTV[3].setText("Day");
+            listOfTV[4].setText("Night");
+            listOfTV[5].setText("Night Off");
+            listOfTV[6].setText("Rest");
+        }
+        else if (st.equals("Night Off")){
+
+            listOfTV[0].setText("Night Off");
+            listOfTV[1].setText("Rest");
+            listOfTV[2].setText("Day");
+            listOfTV[3].setText("Night");
+            listOfTV[4].setText("Night Off");
+            listOfTV[5].setText("Rest");
+            listOfTV[6].setText("Day");
+        }
+        else if (st.equals("Rest")){
+            listOfTV[0].setText("Rest");
+            listOfTV[1].setText("Day");
+            listOfTV[2].setText("Night");
+            listOfTV[3].setText("Night Off");
+            listOfTV[4].setText("Rest");
+            listOfTV[5].setText("Day");
+            listOfTV[6].setText("Night");
         }
     }
 }
