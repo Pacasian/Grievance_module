@@ -14,7 +14,11 @@
         <activity android:name=".Rooster.ViewRoosterActivity"></activity>
         <activity android:name=".Rooster.AddRoosterActivity" />
         <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <uses-library
@@ -35,11 +39,7 @@
         <activity android:name=".BioData.bioDataAdmin" />
         <activity android:name=".Quiz.QuizActivity" />
         <activity android:name=".MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
     </application>

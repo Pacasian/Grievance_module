@@ -13,7 +13,7 @@ public class ConnectionClass extends Activity {
     private RailwaySharedPreference sharedInfo;
 
 
-    String ip="60.243.7.157";
+    String ip="192.168.1.4";
     //String ip = "192.168.1.4";
     String Classes = "net.sourceforge.jtds.jdbc.Driver";
     String db = "testDatabase";

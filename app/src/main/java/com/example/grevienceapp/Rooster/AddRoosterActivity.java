@@ -328,8 +328,8 @@ public class AddRoosterActivity extends AppCompatActivity {
                 System.out.println("1 "+d1+" 2 "+d2+" 3 "+d3+" 4 "+d4+" 5 "+d5+" 6 "+d6+" 7 "+d7);
 
                 System.out.println("*********************");
-                String query="";
-                //String query = "insert into "+SendClass+"_R_Table (pfNumber,Day1,Day2,Day3,Day4,Day5,Day6,Day7) values ('" + eachPfNumber.get(currPf).id + "','" + d1 + "','" + d2 + "','" + d3 + "','" + d4 + "','" + d5 + "','" + d6 + "','" + d7 + "') ;";
+                //String query="";
+                String query = "insert into "+SendClass+"_R_Table (pfNumber,Day1,Day2,Day3,Day4,Day5,Day6,Day7) values ('" + eachPfNumber.get(currPf).id + "','" + d1 + "','" + d2 + "','" + d3 + "','" + d4 + "','" + d5 + "','" + d6 + "','" + d7 + "') ;";
 
                 Statement stmt = con.createStatement();
 

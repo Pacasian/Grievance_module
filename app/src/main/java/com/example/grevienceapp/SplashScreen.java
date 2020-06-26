@@ -19,6 +19,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class SplashScreen extends AppCompatActivity {
     private static int SPLASH_SCREEN_TIME_OUT=3000;
@@ -27,13 +30,22 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        sharedInfo=RailwaySharedPreference.getInstance(getApplicationContext());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+                String currentDateandTime = sdf.format(new Date());
+                System.out.println("************************************");
+                System.out.println("Cureent adta: "+currentDateandTime);
+                System.out.println("PME adta: "+sharedInfo.get("PME"));
                  new JsonTask().execute("https://hits-rail.herokuapp.com/static/data.json");
-                Intent i=new Intent(SplashScreen.this, MainActivity.class);
 
+                Intent i=new Intent(SplashScreen.this, MainActivity.class);
+                if (currentDateandTime.equals(sharedInfo.get("PME"))){
+                    i.putExtra("PME_Alert","pme_alert");
+                    sharedInfo.put("PMECount","1");
+                }
                 startActivity(i);
 
 
@@ -111,7 +123,7 @@ public class SplashScreen extends AppCompatActivity {
                 System.out.println(aJsonString);
                 sharedInfo=RailwaySharedPreference.getInstance(getApplicationContext());
                 sharedInfo.put("ip",aJsonString);
-
+                System.out.println("IP : "+sharedInfo.get("ip"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

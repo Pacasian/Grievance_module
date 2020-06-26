@@ -20,7 +20,7 @@ public class DatabaseConnection extends Activity {
     {
         String ip ;
         sharedInfo=RailwaySharedPreference.getInstance(this);
-        ip = "60.243.7.157";
+        ip = "192.168.1.4";
         //sharedInfo.get("ip");
         System.out.println("------------------------");
         System.out.println(ip+"in DatabaseClass");
